@@ -1,0 +1,17 @@
++--------------------------------+                  +------------------------------------+          +-----------------------------+
+|             Locadora           |                  |             Contrato               |          |         Equipamento         |
++--------------------------------+                  +------------------------------------+          +--------------------=--------+
+| - tiposEquipamento: List       |                  | - Numero: int                      |          | - Id: int                   |
+| - equipamentos: List           |                  | - Cliente: string                  |          | - Nome: string              |
+| - contratos: List              |                  | - DataSaida: DateTime              |          | - Tipo: TipoEquipamento     |
++--------------------------------+                  | - DataRetorno: DateTime            |          | - Disponivel: bool          |
+| + CadastrarTipoEquipamento()   |                  | - ItensContrato: List<ItemContrato>|          +-----------------------------+
+| + ConsultarTiposEquipamento()  |                  | - Liberado: bool                   |          | + Cadastrar()               |
+| + CadastrarEquipamento()       |                  | + AdicionarItem(ItemContrato)      |          | + Consultar()               |
+| + RegistrarContrato()          |                  | + LiberarContrato()                |          | + AtualizarDisponibilidade()|
+| + ConsultarContratos()         |                  | + ConsultarItensContrato()         |          | + Devolver()                |
+| + LiberarContrato()            |                  | + CalcularValor()                  |          +-----------------------------+
+| + ConsultarContratosLiberados()|                  +------------------------------------+
++--------------------------------+                  | + CadastrarEquipamento()           |
+                                                    | + ConsultarEquipamentos()          |
+                                                    +------------------------------------+
